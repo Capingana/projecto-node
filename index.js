@@ -5,7 +5,7 @@ const PORTA = 8081;
 // ===================================================
 app.get("/", (req, response) => {
     let sms="Estou dentro do meu app node.js";
-  response.send(sms.toLocaleUpperCase());
+  response.send(req.params);
 });
 
 // ===================================================
